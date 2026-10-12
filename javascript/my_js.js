@@ -36,7 +36,7 @@ async function handleRegistration(event){
 
     showNotification("notification", "Registration Successful. Redirecting...", ALERT_SUCCESS_TYPE)
     setTimeout(()=> {
-        window.location.href = "./login.html"
+        window.location.href = "login.html"
     }, 1500)
 
 }
