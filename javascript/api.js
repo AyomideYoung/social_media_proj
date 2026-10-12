@@ -234,7 +234,7 @@ async function getBookmarkedPosts(queryParams = {}, token) {
 function getAccessToken() {
   let accessToken = localStorage.getItem(TOKEN_KEY_NAME);
   if (!accessToken) {
-    window.location.pathname = "/login.html";
+    window.location.pathname = "login.html";
     return;
   }
 
@@ -247,6 +247,6 @@ function storeAccessToken(token) {
 
 function redirectToLoginIfUnauthorized(response) {
   if (response.status === 401) {
-    window.location.pathname = "/login.html";
+    window.location.pathname = "login.html";
   }
 }
