@@ -176,7 +176,7 @@ function buildPostView(post, sectionId) {
 function createViewPostLink(postId){
     let link = document.createElement("a");
 
-    link.href = "/view_post.html?post="+postId;
+    link.href = "./view_post.html?post="+postId;
     link.className = "view-post-link"
     link.innerHTML = "View Post...";
 
