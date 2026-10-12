@@ -18,7 +18,7 @@ async function handleLogin(event){
     storeAccessToken(loginResult.data.accessToken)
     //redirect to all_posts
 
-    window.location.href = "all_posts.html"
+    window.location.href = "./all_posts.html"
 }
 
 async function handleRegistration(event){
@@ -36,7 +36,7 @@ async function handleRegistration(event){
 
     showNotification("notification", "Registration Successful. Redirecting...", ALERT_SUCCESS_TYPE)
     setTimeout(()=> {
-        window.location.href = "login.html"
+        window.location.href = "./login.html"
     }, 1500)
 
 }
