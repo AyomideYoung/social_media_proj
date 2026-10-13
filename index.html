@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="images/logo_black.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Merienda:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -12,7 +13,7 @@
     <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="javascript/api.js"></script>
-    <script src="javascript/my_js.js"></script>
+    <script src="javascript/main.js"></script>
     <script src="javascript/all_posts_init.js"></script>
     <title>All Posts</title>
   </head>
@@ -22,7 +23,10 @@
         <nav id="navbar" class="navbar">
           <div id="navbar-button-container">
             <button id="menu-button" onclick="toggleNav(event)">Menu</button>
-            <div aria-roledescription="title" class="title">Site</div>
+            <div>
+              <img src="images/logo_black.png" width="32" height="32" alt="Vision Logo" />
+            </div>
+            <div aria-roledescription="title" class="title">Vision</div>
           </div>
 
           <ul id="nav-list" class="hidden">
@@ -34,18 +38,22 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main id="main-element">
         <div class="flex-rtl">
           <a id="new-post-link" href="create_post.html">Create a New Post</a>
         </div>
 
         <ul id="posts-section"></ul>
-        <span id="loading-indicator">Loading....</span>
-        <button id="more-posts-button" onclick="loadNextPosts()">See more posts</button>
+        <button id="more-posts-button" class="hidden" onclick="loadNextPosts()">See more posts</button>
         <div id="notification"></div>
       </main>
       <footer class="flex-grow">
-        <h2>Site</h2>
+        <div class="flex items-center">
+          <div>
+            <img src="images/logo_white.png" width="48" height="48" alt="Vision Logo" />
+          </div>
+          <h2 class="small-padding">Vision</h2>
+        </div>
         <section>
           <ul id="footer-nav-list">
             <li><a href="index.html">All Posts</a></li>

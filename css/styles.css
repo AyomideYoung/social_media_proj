@@ -25,6 +25,8 @@
 
 #navbar-button-container {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .navbar {
@@ -184,8 +186,8 @@ textarea {
 
 .title {
   display: inline-block;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-family: "Cantarell", "Noto Sans", sans-serif;
   font-size: large;
   font-weight: 700;
@@ -228,6 +230,18 @@ textarea {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.small-padding {
+  padding: 1rem;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .flex-grow {
@@ -292,11 +306,11 @@ Notification styles
   .navbar {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     position: relative;
     background-color: white;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
