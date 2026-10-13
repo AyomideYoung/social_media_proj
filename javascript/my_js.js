@@ -18,7 +18,7 @@ async function handleLogin(event){
     storeAccessToken(loginResult.data.accessToken)
     //redirect to all_posts
 
-    window.location.href = "./all_posts.html"
+    window.location.href = "index.html"
 }
 
 async function handleRegistration(event){
